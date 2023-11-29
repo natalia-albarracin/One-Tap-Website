@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/2f8606a10b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="shortcut icon" type="image/png" href="Logo filled.png">
+    <title>One Tap: Privacy Policy</title>
+    <style>
+        *{
+        padding: 0;
+        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        }
+        .header{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(75,127,255,0.8),rgba(31,66,189,0.8)),url(Banner.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Fira Sans', sans-serif;
+        }
+        nav{
+            background-color: #4B93FF;
+            display: flex;
+            padding: 0.6% 3%;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        .nav-links{
+            flex: 1;
+            text-align: right;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        .nav-links ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #1F42BD;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+        .signup-button{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            border: 2px solid #CDEDFF;
+            padding: 12px 20px;
+            background: transparent;
+            position: relative;
+            border-radius: 12px;
+            cursor: pointer;
+        font-size: 20px;
+        font-family: 'Fira Sans', sans-serif;
+        }
+        .signup-button:hover{
+            border: 2px solid#1F42BD;
+            background: #64B5FF;
+            transition: 1s;
+        }
+        .text-box{
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-family: 'Fira Sans', sans-serif;
+        }
+        .text-box h1{
+        color: white;
+        font-size: 35px;
+        font-weight: 600;
+        margin-top: 80px;
+        }
+        .text-box p{
+            margin: 10px 0 0px;
+            font-size: 18px;
+            font-weight: 200;
+            color: #CDEDFF;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        .nav.fa{
+            display: none;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #CDEDFF;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .accordion {
+            background-color: #ffffff;
+            color: #1F42BD;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            box-shadow: 2px 2px 10px #cdcdcd;
+            border-radius: 5px;
+            max-width: 840px;
+            margin: 20px auto;
+            margin-left: 240px;
+            padding: 20px;
+            font-weight: 500;
+            font-family: 'Fira Sans', sans-serif; ;
+            font-size: 20px;
+        }
+        .active,
+        .accordion:hover {
+            background-color: #cdcdcd;
+        }
+        .accordion:after {
+            content: '\002B';
+            color: #4285f4;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+            border: 2px solid #4285f4;
+            padding: 2px 5px 0px 5px;
+            border-radius: 5px;
+        }
+        .active:after {
+            content: "\2212";
+        }
+        .panel {
+            padding: 0 10px;
+            padding-left: 50px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            border-radius: 5px;
+            max-width: 780px;
+            margin: 20px auto;
+            margin-left: 240px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .panel p{
+            padding: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        footer{
+  background: linear-gradient(rgba(75,127,255,0.8),rgba(31,66,189,0.8))
+        }
+        footer h1{
+        padding-top: 50px;
+        padding-left: 50px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+            padding-left: 60px;
+            font-weight: 500;
+            padding-bottom: 10px;
+            text-align: justify;
+        }
+
+        footer p{
+        font-size: 16px;
+            padding-left: 20px;
+            font-family: 'Roboto',sans-serif;
+            padding-bottom: 40px;
+            padding-right: 60px;
+            padding-left: 80px;
+            padding-bottom: 150px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Logo filled.png" width="95" height="95"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="helpbuttonpage.HTML">HELP BUTTON</a></li>
+<li><a href="CrimeReport.HTML">CRIME REPORTS & ALERTS</a></li>
+<li><a href="network.html">EMERGENCY NETWORK</a></li>
+<li><a href="ReviewPage.html">REVIEWS</a></li>
+<li><a href="ContactUs.html">CONTACT US</a></li>
+<li><a href="privacy_policy.html">POLICIES</a></li>
+<li><a href="signuppage.html" class="signup-button">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-box">
+            <h1>One Tap Privacy Policy</h1>
+            <p>This section allows you to save your emergency contacts in one place. One tap to contact them or send them a message in case of a dangerous situation.</p>
+        </div>
+    </section>
+    
+    <button class="accordion">1. Information We Collect</button>
+    <div class="panel">
+        <p>We collect the following types of information:</p>
+        <ul>
+            <li>Personal information (e.g., name, email, address)</li>
+            <li>Usage data (e.g., how you interact with the app)</li>
+            <li>Device information (e.g., type, model, operating system)</li>
+        </ul>
+         <!-- Add more accordions to detail what information is collected -->
+    </div>
+
+    <button class="accordion">2. How We Use Information</button>
+    <div class="panel">
+        <p>We use the collected information for the following purposes:</p>
+        <ul>
+            <li>To create and manage user accounts</li>
+            <li>To provide personalized content and services</li>
+            <li>To improve our app and user experience</li>
+        </ul>
+         <!-- Add more accordions to detail what information is collected -->
+    </div>
+
+    <button class="accordion">3. Information Sharing</button>
+    <div class="panel">
+        <p>We do not sell or share your information with third parties without your consent, except in the following situations:</p>
+        <ul>
+            <li>With service providers for app functionality</li>
+            <li>When required by law or to protect our rights</li>
+        </ul>
+         <!-- Add more accordions to detail what information is collected -->
+    </div>
+
+    <button class="accordion">4. Cookies and Similar Technologies</button>
+    <div class="panel">
+        4. Cookies and Similar Technologies
+         <!-- Add more accordions to detail what information is collected -->
+    </div>
+
+
+    <button class="accordion">5. Security</button>
+    <div class="panel">
+        <p>We implement security measures to protect your information, but no method of transmission over the internet or electronic storage is 100% secure.</p>
+        <!-- Add more accordions to detail what information is collected -->
+    </div>
+
+    <button class="accordion">6. User Choices and Rights</button>
+    <div class="panel">
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access and correct your personal information</li>
+            <li>Request the deletion of your account</li>
+        </ul>
+        <!-- Add more accordions to detail what information is collected -->
+    </div>
+
+
+    <button class="accordion">7. Changes to this Privacy Policy</button>
+    <div class="panel">
+        <p>We may update this policy. Significant changes will be communicated through the app or via email.</p>
+        <!-- Add more sections to detail policy update practices -->
+    </div>
+
+    <button class="accordion">8. Contact Us</button>
+    <div class="panel">
+        <p>If you have questions or concerns about this Privacy Policy, please contact us at: privacy@onetap.com</p>
+        <!-- Add more sections to detail how users can contact you -->
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+   
+</body>
+<footer>
+    <h1>This Privacy Policy was last updated on 11/26/2023.</h1>
+    <p>&copy; 2023 One Tap. All rights reserved.</p>
+</footer>
+</html>
+
