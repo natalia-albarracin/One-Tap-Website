@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Tap: Help Button</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="Images/Logo filled.png">
+    <style>
+      *{
+        margin: 0;
+      padding: 0;
+      font-family: 'Fira Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
+        }
+        nav{
+    background-color: #4B93FF;
+    display: flex;
+    padding: 0.6% 3%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    font-family: 'Fira Sans', sans-serif;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-family: 'Fira Sans', sans-serif;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1F42BD;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.signup-button{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #CDEDFF;
+  padding: 12px 20px;
+  background: transparent;
+  position: relative;
+  border-radius: 12px;
+  cursor: pointer;
+font-size: 20px;
+font-family: 'Fira Sans', sans-serif;
+}
+.signup-button:hover{
+    border: 2px solid#1F42BD;
+    background: #64B5FF;
+    transition: 1s;
+}
+body {
+            text-align: center;
+            background: radial-gradient(rgba(238,252,255,1) 15%, rgba(100,181,255,1) 100%);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .blue-background {
+            background-color: #1F42BD;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .black-text {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .blue-circle-button {
+            background-color:  #4B93FF;
+            color: white;
+            font-size: 60px;
+            border: none;
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            line-height: 120px;
+            margin: 40px 0;
+            text-align: center;
+            cursor: pointer;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        .grey-background {
+            background-color: #ccc;
+            color: black;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+            display: none;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .undo-button {
+            background-color: red;
+            color: white;
+            font-size: 30px;
+            font-family: 'Fira Sans', sans-serif;
+            padding: 20px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .countdown {
+            font-size: 36px;
+            margin: 20px 0;
+            display: none;
+        }
+        footer{
+  background: linear-gradient(rgba(75,127,255,0.8),rgba(31,66,189,0.8))
+      }
+      footer h1{
+        text-align: left;
+        padding-top: 50px;
+        padding-left: 50px;
+        font-size: 28px;
+        color: white;
+        font-family: 'Fira Sans', sans-serif;
+      }
+
+      footer h2{
+        text-align: left;
+        font-size: 20px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+          padding-left: 60px;
+          font-weight: 500;
+          padding-bottom: 10px;
+          text-align: justify;
+      }
+
+      footer p{
+        text-align: left;
+        font-size: 16px;
+          padding-left: 20px;
+          font-family: 'Roboto',sans-serif;
+          padding-bottom: 40px;
+          padding-right: 60px;
+          padding-left: 80px;
+          padding-bottom: 150px;
+          color: white;
+      }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="Images/Logo filled.png" width="95" height="95"></a>
+        <div class="nav-links" id="navLinks">
+            <ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="helpbuttonpage.HTML">HELP BUTTON</a></li>
+  <li><a href="CrimeReport.HTML">CRIME REPORTS & ALERTS</a></li>
+  <li><a href="network.html">EMERGENCY NETWORK</a></li>
+  <li><a href="ReviewPage.html">REVIEWS</a></li>
+<li><a href="ContactUs.html">CONTACT US</a></li>
+<li><a href="privacy_policy.html">POLICIES</a></li>
+  <li><a href="signuppage.html" class="signup-button">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="blue-background">One Tap Help Button!</div>
+    <div class="black-text">Once pushed, the local police department will be notified of your location.</div>
+    <button class="blue-circle-button" id="notifyButton">Tap Here</button>
+    <div class="grey-background" id="notification" style="display: none;">The Police have been notified.</div>
+    <div class="countdown" id="countdownDisplay" style="display: none;">60</div>
+    <div class="undo-button" id="undoButton" style="display: none;">Undo</div>
+
+    <script>
+        const notifyButton = document.getElementById("notifyButton");
+        const notification = document.getElementById("notification");
+        const countdownDisplay = document.getElementById("countdownDisplay");
+        const undoButton = document.getElementById("undoButton");
+
+        notifyButton.onclick = function () {
+            notification.style.display = "block";
+            countdownDisplay.style.display = "block";
+            undoButton.style.display = "block";
+
+            let countdown = 60;
+            countdownDisplay.textContent = countdown;
+
+            const countdownInterval = setInterval(function () {
+                countdown--;
+                countdownDisplay.textContent = countdown;
+                if (countdown === 0) {
+                    clearInterval(countdownInterval);
+                }
+            }, 1000);
+        };
+
+        undoButton.onclick = function () {
+            notifyButton.style.display = "block";
+           
+        };
+    </script>
+
+<footer>
+  <h1>Having any issues using One Tap?<h1>
+      <h2>Customer service 24/7 </h2>
+      <p>E-mail: customerservice@onetap.com
+      <br>
+      Phone number: 
+  </p>
+</footer>
+</body>
+</html>

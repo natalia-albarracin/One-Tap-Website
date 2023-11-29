@@ -1,0 +1,303 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(75,127,255,0.8),rgba(31,66,189,0.8)),url(Images/Banner.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Fira Sans', sans-serif;
+}
+nav{
+    background-color: #4B93FF;
+    display: flex;
+    padding: 0.6% 3%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    font-family: 'Fira Sans', sans-serif;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-family: 'Fira Sans', sans-serif;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1F42BD;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.signup-button{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #CDEDFF;
+  padding: 12px 20px;
+  background: transparent;
+  position: relative;
+  border-radius: 12px;
+  cursor: pointer;
+font-size: 20px;
+font-family: 'Fira Sans', sans-serif;
+}
+.signup-button:hover{
+    border: 2px solid#1F42BD;
+    background: #64B5FF;
+    transition: 1s;
+}
+.text-box{
+width: 90%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+font-family: 'Fira Sans', sans-serif;
+}
+.text-box h1{
+color: white;
+font-size: 45px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 22px;
+    color: #CDEDFF;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.hero-button{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #CDEDFF;
+  padding: 12px 50px;
+  background: transparent;
+  position: relative;
+  border-radius: 12px;
+  cursor: pointer;
+font-size: 20px;
+font-family: 'Fira Sans', sans-serif;
+}
+.hero-button:hover{
+    border: 1px solid#64B5FF;
+    background: #64B5FF;
+    transition: 1s;
+}
+.nav.fa{
+    display: none;
+}
+
+.maininfo{
+    background-color: #EEFCFF;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+  /* Create two equal columns that floats next to each other */
+  .HowItWorks {
+    float: left;
+    width: 50%;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .HowItWorks h1{
+    color: #1F42BD;
+    font-size: 38px;
+    font-family: 'Fira Sans', sans-serif;
+    }
+.HowItWorks img{
+    width: 400px;
+    height: 600px;
+}
+.HowItWorks h2{
+    color: #1F42BD;
+    font-size: 38px;
+    font-family: 'Fira Sans', sans-serif;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+.HowItWorks p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.2;
+    font-size: 18px;
+    padding-top: 40px;
+    padding-right: 50px;
+}
+  * {
+    box-sizing: border-box;
+  }
+  .Features h1{
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    color: #1F42BD;
+    background-color: #EEFCFF;
+    font-size: 38px;
+    padding-bottom: 60px;
+
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  .column h2{
+    font-size: 25px;
+    padding-left: 60px;
+    font-family: Roboto,sans-serif;
+    font-weight: 500;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: justify;
+  }
+  .column p{
+    font-size: 16px;
+    padding-left: 20px;
+    font-family: 'Roboto',sans-serif;
+    padding-bottom: 40px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .MPTap{
+    display: inline-block;
+    text-decoration: none;
+    color: #4B93FF;
+    border: 2px solid #4B93FF;
+    font-size: 13px;
+    background: transparent;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin-left: 60px;
+    margin-bottom: 140px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.MPTap:hover{
+    border: 2px solid #1760cd;
+    background: #4B93FF;
+    transition: 1s;
+    color: white;
+}
+  .column img{
+    width: 300px;
+    height: 450px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .AppsandAccount{
+    background-color: #EEFCFF;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.AppsandAccount img{
+  width: 250px;
+  height: 220px;
+  padding-top: 50px;
+
+}
+.GetStarted2{
+  display: inline-block;
+  margin-top: 100px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: white;
+    border: transparent;
+    padding: 15px 50px;
+    background: #1F42BD;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+font-size: 30px;
+font-family: 'Fira Sans', sans-serif;
+}
+.GetStarted2:hover{
+  border: 3px solid#1760cd;
+  background: #64B5FF;
+  color: white;
+  transition: 1s;
+}
+
+footer{
+  background: linear-gradient(rgba(75,127,255,0.8),rgba(31,66,189,0.8))
+}
+footer h1{
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 28px;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+footer h2{
+  font-size: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+    padding-left: 60px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+footer p{
+  font-size: 16px;
+    padding-left: 20px;
+    font-family: 'Roboto',sans-serif;
+    padding-bottom: 40px;
+    padding-right: 60px;
+    padding-left: 80px;
+    padding-bottom: 150px;
+    color: white;
+}
